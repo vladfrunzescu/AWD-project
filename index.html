@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prof. Vlad-Teodor Frunzescu</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.18/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.18/js/jquery.dataTables.js"></script>
+</head>
+<body>
+    <header class="header-content">
+        <div class="professor-image">
+            <img src="images/me.png" alt="Professor's Picture">
+        </div>
+        <div class="header-text">
+            <h1>Prof. Vlad-Teodor Frunzescu</h1>
+            <nav>
+                <ul>
+                    <li class="menu-item"><a href="index.html">Home</a></li>
+                    <li class="menu-item"><a href="personal_info.html">Personal Info</a></li>
+                    <li class="menu-item"><a href="contact.html">Contact</a></li>
+                    <li class="menu-item"><a href="teaching_subject.html">Teaching Subjects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" id="close-popup">&times;</span>
+                <h2>Subscribe to receive my latest articles</h2>
+                <p>Enter your email below to receive updates:</p>
+                <form id="subscription-form">
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <button type="submit" id="subscribe-button">Submit</button>
+                </form>
+            </div>
+        </div>        
+
+        <section id="bio">
+            <h2>Bio</h2>
+            <p>I am a passionate and dedicated professional in the field of computer science, with a strong academic background and extensive industry experience. My journey in the world of technology began at Babes-Bolyai University in Cluj-Napoca, where I pursued my undergraduate degree in Computer Science.
+            <br><br>
+               Driven by my curiosity and a thirst for knowledge, I continued my educational journey by enrolling in a master's program in Software Engineering. This provided me with a deeper understanding of the intricacies of software development and engineering principles.
+               <br><br>
+                In parallel to my academic pursuits, I embarked on a professional career with a renowned multinational company based in Switzerland. Working within this dynamic and innovative environment has not only honed my technical skills but also exposed me to the global landscape of technology and business.
+                <br><br>
+                Thank you for taking the time to learn a bit about me, and I look forward to connecting with you on our shared journey of exploration and discovery in the world of technology.</p>
+        </section>
+
+        <section id="courses">
+            <h2>Courses</h2>
+            
+            <button class="accordion-button">Click to expand courses</button>
+            <div class="accordion-panel">
+                <div class="table-container">
+                    <table id="coursesTable">
+                        <thead>
+                            <tr>
+                                <th>Course Name</th>
+                                <th>Timetable</th>
+                                <th>Students Enrolled</th>
+                                <th>Feedback Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cloud Fundamentals</td>
+                                <td><a href="timetable_course1.html">Click Here for timetable</a></td>
+                                <td>23</td>
+                                <td>4.5/5</td>
+                            </tr>
+                            <tr>
+                                <td>Programming</td>
+                                <td><a href="timetable_course2.html">Click Here for timetable</a></td>
+                                <td>40</td>
+                                <td>4.0/5</td>
+                            </tr>
+                            <tr>
+                                <td>Microservices Architectures</td>
+                                <td><a href="timetable_course3.html">Click Here for timetable</a></td>
+                                <td>30</td>
+                                <td>4.8/5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        
+        <section id="talks">
+            <h2>Interesting Talks</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hRYDuOGmDus" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <blockquote>
+                <p>"Prof. Vlad-Teodor Frunzescu's courses are a must for anyone serious about computer science. His in-depth knowledge and hands-on approach make each session a valuable learning experience. His Programming course, in particular, equipped me with essential skills for real-world development."</p>
+                <cite>- First year student, 2020</cite>
+            </blockquote>
+            <blockquote>
+                <p>"I enrolled in Prof. Frunzescu's Microservices Architectures course, and it was a game-changer for my career. His practical insights and industry-relevant content provided a solid foundation for understanding complex architectures and their applications."</p>
+                <cite>- Master's student, 2022</cite>
+            </blockquote>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2024 My Personal Website</p>
+    </footer>
+
+    <script src="js/js.js"></script>
+</body>
+</html>
