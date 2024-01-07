@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.18/css/jquery.dataTables.css">
-    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.18/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.11.18/js/jquery.dataTables.js"></script>
 </head>
 <body>
     <header class="header-content">
@@ -38,6 +38,7 @@
                 <h2>Subscribe to receive my latest articles</h2>
                 <p>Enter your email below to receive updates:</p>
                 <form id="subscription-form">
+                    <label id="subscription-form">
                     <input type="email" id="email" placeholder="Enter your email" required>
                     <button type="submit" id="subscribe-button">Submit</button>
                 </form>
@@ -98,7 +99,7 @@
         <section id="talks">
             <h2>Interesting Talks</h2>
             <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/hRYDuOGmDus" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hRYDuOGmDus" allowfullscreen></iframe>
             </div>
         </section>
 
@@ -117,10 +118,10 @@
 
     <footer>
         <div class="social-icons">
-            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="linkedin link"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="twitter link"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com" target="_blank" aria-label="facebook link"><i class="fab fa-facebook"></i></a>
+            <a href="https://youtube.com" target="_blank" aria-label="youtube link"><i class="fab fa-youtube"></i></a>
         </div>
         <p>&copy; 2024 Prof. V. Frunzescu</p>
     </footer>
